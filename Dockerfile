@@ -39,6 +39,8 @@ COPY ./package.json /app/package.json
 
 #this process errored out
 #RUN npm install
+
+# i used this one instead
 RUN apt-get install npm -y
 
 # Copy the contents of the current host directory (i.e., our app code) into
